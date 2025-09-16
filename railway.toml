@@ -1,0 +1,25 @@
+# Railway.app configuration file
+# This file configures the deployment settings for Railway
+
+# Build settings
+build:
+  commands:
+    - pip install -r requirements.txt
+
+# Start command
+start: python main.py
+
+# Environment variables (set these in Railway dashboard)
+# WHATSAPP_ACCESS_TOKEN=your_actual_token
+# WHATSAPP_PHONE_NUMBER_ID=744278420647710
+# WHATSAPP_VERIFY_TOKEN=CE_HOD123
+# WHATSAPP_BUSINESS_ACCOUNT_ID=566426316491462
+# SECRET_KEY=your_production_secret_key
+# PORT=5001
+
+# Health check endpoint
+healthcheck: /health
+
+# Domain settings
+domains:
+  - your-app-name.railway.app
