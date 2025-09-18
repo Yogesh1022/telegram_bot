@@ -28,7 +28,7 @@ except ImportError as e:
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 if not TOKEN:
     print("⚠️ No TELEGRAM_BOT_TOKEN found in .env, using fallback token")
-    TOKEN = "8251884942:AAG-j7yiGjG4vWuCwZB1_pjszMO2oq80Tco"
+    TOKEN = ""
 
 # ------------------ BOT LOGIC ------------------ #
 class HODTelegramBot:
@@ -403,4 +403,5 @@ def main():
     app.run_polling()
 
 if __name__ == "__main__":
+
     main()
